@@ -1,0 +1,298 @@
+/*=============== FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --color1: hsl(38, 69%, 59%);
+  --color2: hsl(38, 8%, 8%);
+  --color3: #FFFFFF;
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: var(--color3);
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--color2);
+  background-color: var(--color1);
+}
+
+/*=============== HEADER ===============*/
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  width: 100vw;
+  height: 50px;
+}
+
+.btn {
+  display: none;
+  position: absolute;
+  right: 10vw;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.sous-menu {
+  display: none;
+}
+
+nav {
+  width: 30%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color2);
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+
+/*=============== MAIN ===============*/
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  width: 100vw;
+  height: 80vh;
+}
+
+.mainLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 50%;
+  width: 100%;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+button {
+  height: 40px;
+  width: 125px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--color2);
+}
+
+.text-btn {
+  color: var(--color3);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.mainRight {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+img {
+  height: 70%;
+  width: 100%;
+  position: relative;
+  animation: animGhost ease-in-out 5s infinite;
+}
+
+@keyframes animGhost {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.ghost-shadow {
+  height: 40px;
+  width: 170px;
+  background-color: var(--color2);
+  position: absolute;
+  top: 85%;
+  border-radius: 50%;
+  filter: blur(7px);
+  opacity: 0.6;
+  animation: animShadow ease-in-out 5s infinite;
+}
+
+@keyframes animShadow {
+  0% {
+    width: 170px;
+  }
+  50% {
+    width: 220px;
+  }
+  100% {
+    width: 170px;
+  }
+}
+
+
+/*=============== FOOTER ===============*/
+footer {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+hr {
+  padding-left: 20px;
+  padding-right: 20px;
+  visibility: hidden;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*=============== RESPONSIVE ===============*/
+@media (min-width: 1px) and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  .ri-menu-line {
+    display: block;
+  }
+  .sous-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 0vh;
+    background-color: var(--color1);
+    border-bottom: var(--color2) solid 2px;
+    z-index: 1000;
+    animation: animMenu 1s ease forwards;
+  }
+  @keyframes animMenu {
+    from {
+      height: 0vh;
+    }
+    to {
+      height: 30vh;
+    }
+  }
+  main {
+    flex-direction: column;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 100vw;
+    height: 80vh;
+  }
+  .mainLeft {
+    align-items: center;
+    height: 120%;
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+  .mainRight {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  img {
+    height: 60%;
+    width: 50%;
+    position: relative;
+    animation: animGhost ease-in-out 5s infinite;
+  }
+}
+
+
+
+@media (min-width: 1px) and (max-width: 425px) {
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 0.6rem;
+    padding-right: 10px;
+  }
+  img {
+    height: 80%;
+  }
+  @keyframes animShadow {
+    0% {
+      width: 100px;
+    }
+    50% {
+      width: 140px;
+    }
+    100% {
+      width: 100px;
+    }
+  }  
+}
+
+

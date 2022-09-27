@@ -1,0 +1,281 @@
+/*=============== FONTS ===============*/
+@import url("");
+
+@font-face {
+  font-family: "font-1";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "font-3";
+  src: url(../fonts/GT-Ultra-Standard-Bold-Trial.woff2);
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --color1: #060447;
+  --color2: #FFF38A;
+  --color3: #827B68;
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: var(--color3);
+}
+
+body {
+  font-family: "font-1";
+  font-size: 1rem;
+  color: var(--color2);
+  background-color: var(--color1);
+}
+
+/*=============== MAIN ===============*/
+main {
+  height: 100vh;
+  width: 100vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+.main_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 10% 3fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+.main_text {
+  grid-row: 1;
+  grid-column: 1;
+  animation: fadeOut 0.5s forwards;
+}
+.main_date {
+  grid-row: 3;
+  grid-column: 1;
+  align-self: end;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.main_image {
+  grid-row: 1 / 4;
+  grid-column: 2;
+  position: relative;
+}
+.main_swiper {
+  grid-row: 4;
+  grid-column: 1 / 3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textActive  {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+}
+
+#logo {
+  height: 80px;
+  width: 80px;
+}
+
+h1 {
+  font-family: "font-2";
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 49px;
+  width: 354px;
+}
+h2 {
+  font-family: "font-1";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  width: 400px;
+}
+
+.text_date {
+  font-family: "font-3";
+  font-size: 200px;
+  align-self: end;
+  display: none;
+  animation: fadeOut 0.5s forwards;
+}
+
+.dateActive {
+  display: block;
+  animation: fadeIn 0.5s forwards;
+}
+
+.img {
+  height: 92%;
+  width: 68%;
+  min-width: 350px; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: fadeOut 0.5s ease forwards;
+}
+
+.imgActive {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.fleche {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.logo_fleche {
+  font-size: 35px;
+  color: var(--color3);
+}
+
+.fleche_active {
+  color: var(--color2);
+  transition: 0.5s;
+}
+
+.active {
+  background-color: var(--color2);
+  transition: 1s;
+}
+
+.pagination {
+  width: 80%;
+  position: relative;
+}
+
+.pagination_container::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--color3);
+  position: absolute;
+}
+
+.pagination_container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle_progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.circle {
+  height: 32px;
+  width: 32px;
+  background-color: var(--color3);
+  border-radius: 50px;
+  z-index: 1000;
+}
+
+.active {
+  background-color: var(--color2);
+  transition: .5s;
+}
+
+.dynamic_progress {
+  background-color: var(--color2);
+  height: 2px;
+  position: absolute;
+  animation: animProgressOut 0.5s ease forwards;
+}
+
+.progressActive {
+  animation: animProgressIn 0.5s ease forwards;
+}
+
+@keyframes animProgressIn {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 25%;
+  }
+}
+
+@keyframes animProgressOut {
+  from {
+    width: 25%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+/* RESPONSIVE */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "font-1";
+  src: url(./src/assets/Manrope-Regular.woff2);
+}
+
+:root {
+  --color1: #ffffff;
+  --color2: #ff4820;
+  --color3: #042c54;
+  --color4: #040c18;
+  --color5: #81afdd;
+  --color6: #ff8a71;
+}
+
+.feature-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  row-gap: 50px;
+  column-gap: 150px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-top: 15vh;
+}
+
+.feature1-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.feature1-2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.feature1-3 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.feature1-4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.feature1-5 {
+  grid-column: 2;
+  grid-row: 3;
+}
+.feature1-6 {
+  grid-column: 2;
+  grid-row: 4;
+}
+.feature1-7 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.feature1-8 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.feature1-9 {
+  grid-column: 3;
+  grid-row: 3;
+}
+.feature1-10 {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+#request {
+  color: #ff8a71;
+  background: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  cursor: pointer;
+  border-bottom: 0.1rem solid var(--color1);
+  position: relative;
+  margin-top: 5vh;
+}
+
+#request:hover {
+  border-top: 0.1rem solid var(--color1);
+}
+
+#request:active {
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+h5 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+}
+
+h5::before {
+  content: "";
+  display: block;
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+    #ffffff;
+  width: 38px;
+  height: 3px;
+}
+
+/* FEATURE 2 */
+
+#possibility {
+  width: 70%;
+}
+
+.feature-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.feature2-content {
+  margin-right: 10%;
+}
+
+#feature2-content-text {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  h3 {
+    padding-top: 5vh;
+  }
+  .feature1-1 {
+    grid-column: 1;
+    grid-row: 1 / 5;
+  }
+  .feature1-2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  h3 {
+    padding-top: 5vh;
+  }
+  .feature1-1 {
+    grid-column: 1;
+    grid-row: 1 / 5;
+  }
+  .feature1-2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .feature-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    row-gap: 50px;
+    column-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 15vh;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  h3 {
+    padding-top: 5vh;
+    font-size: 16px;
+  }
+  #request {
+    font-size: 12px;
+  }
+  .feature1-1 {
+    grid-column: 1;
+    grid-row: 1 / 5;
+  }
+  .feature1-2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .feature-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    row-gap: 50px;
+    column-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 15vh;
+  }
+  #possibility {
+    width: 90%;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  h3 {
+    padding-top: 5vh;
+    font-size: 16px;
+  }
+  #request {
+    font-size: 12px;
+  }
+  .feature1-1 {
+    grid-column: 1;
+    grid-row: 1 / 5;
+  }
+  .feature1-2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .feature-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    row-gap: 50px;
+    column-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 15vh;
+  }
+  #possibility {
+    width: 90%;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  h3 {
+    padding-top: 5vh;
+    font-size: 16px;
+  }
+  #request {
+    font-size: 12px;
+  }
+  .feature1-1 {
+    grid-column: 1;
+    grid-row: 1 / 5;
+  }
+  .feature1-2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .feature-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    row-gap: 50px;
+    column-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 15vh;
+  }
+  #possibility {
+    width: 90%;
+  }
+}

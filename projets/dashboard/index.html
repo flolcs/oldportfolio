@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="./assets/img/logofl.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <section class="top-header">
+        <div>
+          <img id="top-header_logo" src="./assets/img/logofl.png" alt="logo" />
+          <span class="material-icons-sharp" id="icon-menu">menu</span>
+          <span class="material-icons-sharp" id="icon-close">close</span>
+        </div>
+        <div class="top-header_profil">
+          <div class="top-header_profil-lightDarkMode">
+            <button class="btn-lightMode active">
+              <span class="material-icons-sharp" id="icon-light">light_mode</span>
+            </button>
+            <button class="btn-darkMode">
+              <span class="material-icons-sharp" id="icon-dark">dark_mode</span>
+            </button>
+          </div>
+          <div class="top-header_profil-user">
+            <p id="compte-user">Hey, <strong>Daniel</strong><br />Admin</p>
+            <img
+              id="top-header_profil-img"
+              src="./assets/img/profile-1.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="navigation">
+        <nav>
+          <ul class="menu">
+            <li>
+              <a class="activeNav" href="">
+                <span class="material-icons-sharp">dashboard</span>
+                <h1>Dashboard</h1>
+              </a>
+            </li>
+            <li>
+              <a class="" href="">
+                <span class="material-icons-sharp">person_outline</span>
+                <h1>Customers</h1>
+              </a>
+            </li>
+            <li>
+              <a class="" href="">
+                <span class="material-icons-sharp">receipt_long</span>
+                <h1>Orders</h1>
+              </a>
+            </li>
+            <li>
+              <a class="" href="">
+                <span class="material-icons-sharp">insights</span>
+                <h1>Analytics</h1>
+              </a>
+            </li>
+            <li>
+              <a class="" href="">
+                <span class="material-icons-sharp">mail_outline</span>
+                <h1>Messages</h1>
+              </a>
+            </li>
+            <li>
+              <a class="" href="">
+                <span class="material-icons-sharp">inventory</span>
+                <h1>Products</h1>
+              </a>
+            </li>
+            <li>
+              <a class="" href="">
+                <span class="material-icons-sharp">report_gmailerrorred</span>
+                <h1>Reports</h1>
+              </a>
+            </li>
+            <li>
+              <a class="" href="">
+                <span class="material-icons-sharp" id="navigation_menu-icons">settings</span>
+                <h1>Settings</h1>
+              </a>
+            </li>
+            <li>
+              <a class="" href="">
+                <span class="material-icons-sharp" id="navigation_menu-icons">add</span>
+                <h1>Add Product</h1>
+              </a>
+            </li>
+            <li>
+              <a class="" href="">
+                <span class="material-icons-sharp" id="navigation_menu-icons">logout</span>
+                <h1>Logout</h1>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <input type="date" id="date">
+            <div class="dashboard_3containers">
+                <div class="dashboard_container">
+                    <div class="dashboard_sous-container">
+                        <div class="background-icon-purple">
+                            <span class="material-icons-sharp" id="dashboard-icon">analytics</span> 
+                        </div>
+                        <h3>Total Sales</h3>    
+                        <h4>$25,024</h4>  
+                        <h5>Last 24 Hours</h5>
+                    </div>
+                    <div class="conteneur-graph-sales">
+                        <canvas id="graph-sales"></canvas>
+                    </div>
+                </div>
+                <div class="dashboard_container">
+                    <div class="dashboard_sous-container">
+                        <div class="background-icon-red">
+                            <span class="material-icons-sharp" id="dashboard-icon">bar_chart</span> 
+                        </div>
+                        <h3>Total Expenses</h3>    
+                        <h4>$14,160</h4>  
+                        <h5>Last 24 Hours</h5>
+                    </div>
+                    <div class="conteneur-graph-sales">
+                        <canvas id="graph-expenses"></canvas>
+                    </div>
+                </div>
+                <div class="dashboard_container">
+                    <div class="dashboard_sous-container">
+                        <div class="background-icon-green">
+                            <span class="material-icons-sharp" id="dashboard-icon">stacked_line_chart</span> 
+                        </div>
+                        <h3>Total Income</h3>    
+                        <h4>$10,864</h4>  
+                        <h5>Last 24 Hours</h5>
+                    </div>
+                    <div class="conteneur-graph-sales">
+                        <canvas id="graph-income"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="updates">
+          <h6>Recent Updates</h6>
+          <div class="updates_container">
+            <div class="updates_sous-containers">
+              <img id="updates-img" src="./assets/img/profile-2.jpg" alt="profile">
+              <p><strong>Mike Tyson </strong>received his order of Night lion tech GPS drone. <br><span class="updates_time">2 minutes ago</span></p>
+            </div>
+            <div class="updates_sous-containers">
+              <img id="updates-img" src="./assets/img/profile-3.jpg" alt="profile">
+              <p><strong>Diana Ayi </strong>declined her order of 2 DJI Air 2s. <br><span class="updates_time">5 minutes ago</span></p>
+            </div>
+            <div class="updates_sous-containers">
+              <img id="updates-img" src="./assets/img/profile-4.jpg" alt="profile">
+              <p><strong>Mandy Roy </strong>received his order of LARVENDER KF102 Drone. <br><span class="updates_time">6 minutes ago</span></p>
+            </div>
+          </div>
+        </section>
+        <section class="orders">
+          <h6>Recent Orders</h6>
+          <div class="orders_container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product Name</th>
+                  <th>Product Number</th>
+                  <th>Product Payment</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Foldable Mini Drone</td>
+                  <td>85631</td>
+                  <td>Due</td>
+                  <td><span id="pending">Pending</span></td>
+                  <td><span id="details">Details</span></td>
+                </tr>
+                <tr>
+                  <td>LARVENDER KF102 Drone</td>
+                  <td>36378</td>
+                  <td>Refunded</td>
+                  <td><span id="declined">Declined</span></td>
+                  <td><span id="details">Details</span></td>
+                </tr>
+                <tr>
+                  <td>Ruko F11 Pro Drone</td>
+                  <td>49347</td>
+                  <td>Due</td>
+                  <td><span id="pending">Pending</span></td>
+                  <td><span id="details">Details</span></td>
+                </tr>
+                <tr>
+                  <td>Drone with Camera Drone</td>
+                  <td>96996</td>
+                  <td>Paid</td>
+                  <td><span id="delivered">Delivered</span></td>
+                  <td><span id="details">Details</span></td>
+                </tr>
+                <tr>
+                  <td>GPS 4K Drone</td>
+                  <td>22821</td>
+                  <td>Paid</td>
+                  <td><span id="delivered">Delivered</span></td>
+                  <td><span id="details">Details</span></td>
+                </tr>
+                <tr>
+                  <td>DJI Air 2S</td>
+                  <td>81475</td>
+                  <td>Due</td>
+                  <td><span id="pending">Pending</span></td>
+                  <td><span id="details">Details</span></td>
+                </tr>
+                <tr>
+                  <td>Lozenge Drone</td>
+                  <td>00482</td>
+                  <td>Paid</td>
+                  <td><span id="delivered">Delivered</span></td>
+                  <td><span id="details">Details</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="analytics">
+          <h6>Sales Analytics</h6>
+          <div class="analytics_container">
+            <div class="background-icon-purple">
+              <span class="material-icons-sharp" id="dashboard-icon">shopping_cart</span> 
+            </div>
+            <div class="analytics_text">
+              <h3>ONLINE ORDERS</h3>
+              <span class="updates_time">Last 24 Hours</span>
+            </div>
+            <span id="positive-pourcentage">+39%</span>
+            <p><strong>3849</strong></p>
+          </div>
+          <div class="analytics_container">
+            <div class="background-icon-red">
+              <span class="material-icons-sharp" id="dashboard-icon">shopping_bag</span> 
+            </div>
+            <div class="analytics_text">
+              <h3>OFFLINE ORDERS</h3>
+              <span class="updates_time">Last 24 Hours</span>
+            </div>
+            <span id="negative-pourcentage">-17%</span>
+            <p><strong>1100</strong></p>
+          </div>
+          <div class="analytics_container">
+            <div class="background-icon-green">
+              <span class="material-icons-sharp" id="dashboard-icon">person</span> 
+            </div>
+            <div class="analytics_text">
+              <h3>NEW CUSTOMERS</h3>
+              <span class="updates_time">Last 24 Hours</span>
+            </div>
+            <span id="positive-pourcentage">+25%</span>
+            <p><strong>849</strong></p>
+          </div>
+          <div class="analytics_addProduct">
+            <span class="material-icons-sharp" id="icon-plus">add</span>
+            <span id="addProduct">Add Product</span>
+          </div>
+        </section>
+    </main>
+    <footer>
+      <span id="footer_text">Florian Lucas © 2022. Tous droits réservés.</span>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

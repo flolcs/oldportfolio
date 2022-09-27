@@ -1,0 +1,407 @@
+@font-face {
+  font-family: "font-1";
+  src: url(./src/assets/Manrope-Regular.woff2);
+}
+
+:root {
+  --color1: #ffffff;
+  --color2: #ff4820;
+  --color3: #042c54;
+  --color4: #040c18;
+  --color5: #81afdd;
+  --color6: #ff8a71;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  padding-top: 5vh;
+}
+
+.navbar {
+  width: 30%;
+  padding-right: 25%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 150%;
+}
+
+#gpt3 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+
+a::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+    #ffffff;
+  border-radius: 5px;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+li {
+  list-style-type: none;
+}
+
+#sign-in {
+  border: none;
+  background: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 5px;
+  height: 58px;
+  width: 152px;
+  cursor: pointer;
+  position: relative;
+}
+
+#sign-in::before {
+  transform: scaleX(0);
+}
+
+#sign-in:hover::before {
+  transform: scaleX(1);
+}
+
+#sign-in::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--color3);
+  border-radius: 5px;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+#sign-in:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.507);
+}
+
+#sign-in:active:after {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.507);
+  position: absolute;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+#sign-up {
+  border: none;
+  background-color: var(--color2);
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 5px;
+  height: 58px;
+  width: 152px;
+  cursor: pointer;
+  position: relative;
+}
+
+#sign-up:hover {
+  background-color: var(--color3);
+  transition: 0.5s;
+}
+
+#sign-up:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.507);
+}
+
+#sign-up:active:after {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.507);
+  position: absolute;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.conteneur-nav {
+  display: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .navbar {
+    padding-right: 15%;
+    width: 35%;
+  }
+  #sign-in {
+    height: 45px;
+    width: 120px;
+  }
+  #sign-up {
+    height: 45px;
+    width: 120px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    padding-right: 15%;
+    width: 35%;
+  }
+  #sign-in {
+    height: 35px;
+    width: 80px;
+    font-size: 14px;
+  }
+  #sign-up {
+    height: 35px;
+    width: 80px;
+    font-size: 14px;
+  }
+  a {
+    font-size: 14px;
+  }
+  .navbar {
+    width: 38%;
+  }
+  a::before {
+    display: none;
+  }
+  #sign-up:hover {
+    background-color: var(--color2);
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .navbar {
+    padding-right: 15%;
+    width: 35%;
+    display: none;
+  }
+  #sign-in {
+    height: 35px;
+    width: 80px;
+    font-size: 14px;
+    background-color: var(--color3);
+    border-radius: 5px;
+  }
+  #sign-up {
+    height: 35px;
+    width: 80px;
+    font-size: 14px;
+  }
+  #sign-up:hover {
+    background-color: var(--color2);
+  }
+  a {
+    font-size: 14px;
+  }
+  .conteneur-nav {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    list-style-type: none;
+  }
+  nav input[type="checkbox"]:checked + ul {
+    display: flex;
+    flex-flow: column;
+    height: 20vh;
+  }
+  nav input[type="checkbox"] {
+    display: none;
+  }
+  label {
+    position: sticky;
+  }
+  #menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  li {
+    line-height: 30px;
+  }
+  nav {
+    align-items: flex-start;
+  }
+  a::before {
+    display: none;
+  }
+  #sign-up:hover {
+    background-color: var(--color2);
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  .navbar {
+    padding-right: 15%;
+    width: 35%;
+    display: none;
+  }
+  #sign-in {
+    height: 35px;
+    width: 80px;
+    font-size: 14px;
+    background-color: var(--color3);
+    border-radius: 5px;
+  }
+  #sign-up {
+    height: 35px;
+    width: 80px;
+    font-size: 14px;
+  }
+  a::before {
+    display: none;
+  }
+  #sign-up:hover {
+    background-color: var(--color2);
+  }
+  a {
+    font-size: 14px;
+  }
+  .conteneur-nav {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    list-style-type: none;
+  }
+  nav input[type="checkbox"]:checked + ul {
+    display: flex;
+    flex-flow: column;
+    height: 20vh;
+  }
+  nav input[type="checkbox"] {
+    display: none;
+  }
+  label {
+    position: sticky;
+  }
+  #menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  li {
+    line-height: 30px;
+  }
+  nav {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .navbar {
+    padding-right: 15%;
+    width: 35%;
+    display: none;
+  }
+  #sign-in {
+    height: 30px;
+    width: 60px;
+    font-size: 14px;
+    background-color: var(--color3);
+    border-radius: 5px;
+  }
+  #sign-up {
+    height: 30px;
+    width: 60px;
+    font-size: 14px;
+  }
+  a::before {
+    display: none;
+  }
+  #sign-up:hover {
+    background-color: var(--color2);
+  }
+  a {
+    font-size: 14px;
+  }
+  .conteneur-nav {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    list-style-type: none;
+  }
+  nav input[type="checkbox"]:checked + ul {
+    display: flex;
+    flex-flow: column;
+    height: 20vh;
+  }
+  nav input[type="checkbox"] {
+    display: none;
+  }
+  label {
+    position: sticky;
+  }
+  #menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  li {
+    line-height: 30px;
+  }
+  nav {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-device-width: 1280px) and (orientation: landscape) {
+  a::before {
+    display: none;
+  }
+  #sign-up:hover {
+    background-color: var(--color2);
+  }
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "font-1";
+  src: url(./src/assets/Manrope-Regular.woff2);
+}
+
+:root {
+  --color1: #ffffff;
+  --color2: #ff4820;
+  --color3: #042c54;
+  --color4: #040c18;
+  --color5: #81afdd;
+  --color6: #ff8a71;
+}
+
+* {
+  font-family: "font-1";
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  scroll-behavior: auto;
+  color: var(--color1);
+}
+
+*::selection {
+  background-color: #ae67fa80;
+}
+
+body {
+  background-color: #040c18;
+  margin-right: 5%;
+  margin-left: 5%;
+}

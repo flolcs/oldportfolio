@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEvent 2022</title>
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div>
+        <header>
+            <section class="top-header">
+                <nav>
+                    <ul class="link">
+                        <a href="#main">ACCUEIL</a>
+                        <a href="#main"><i class="icon ri-home-heart-fill"></i></a>
+                        <a href="#associations">LES ASSOCIATIONS</a>
+                        <a href="#associations"><i class="icon ri-earth-fill"></i></a>
+                    </ul>
+                    <ul class="billeterie">
+                        <a href="https://www.youtube.com/channel/UCCVRCLyKBwNZ7V_j9h83fuQ" target="_blank"><i class="icon ri-music-fill"></i></a>
+                    </ul>
+                </nav>
+            </section>
+            <section class="bot-header">
+                <div class="reseaux">
+                    <a href="https://twitter.com/ZEventfr" target="_blank"><i class="icon ri-twitter-fill"></i></a>
+                    <a href="https://www.instagram.com/zeventfr/" target="_blank"><i class="icon ri-instagram-fill"></i></a>
+                    <a href="https://www.reddit.com/r/ZEvent/" target="_blank"><i class="icon ri-reddit-fill"></i></a>
+                </div>
+            </section>
+            <img src="./assets/img/logo.png" id="logo" alt="logo ZEvent">
+        </header>
+        <main id="main">
+            <section class="baniere" id="baniere">
+                <img src="./assets/img/banniere.png" id="banniereZEvent" alt="baniere ZEvent">
+            </section>
+            <section class="presentation">
+                <p id="p1"><b>Z Event</b> est un projet caritatif créé par <b>Adrien Nougaret et Alexandre Dachary</b>.<br>
+                <p id="p2">Divisé en 2 parties, l'événement se compose d'un showcase qui fait office d'amorce et est suivi par un marathon de streaming jeux vidéo lors duquel de nombreux animateurs spécialisés se rassemblent tout au long du weekend.</p>
+                <p id="p3">Pendant <b>plus de 50h</b>, les participants diffusent du contenu en direct tous ensemble et encouragent les spectateurs à se mobiliser pour soutenir <b>une association carritative</b>.</p>
+            </section>
+            <section class="historique">
+                <h1>Historique</h1>
+                <div class="historique-container h2016">
+                    <span class="date">04-06 Mars 2016</span>
+                    <span class="montant">170 000€</span>
+                    <span class="asso">Save The Children</span>
+                </div>
+                <div class="historique-container h2017">
+                    <span class="date">08-11 Septembre 2017</span>
+                    <span class="montant">500 000€</span>
+                    <span class="asso">La Croix Rouge française</span>
+                </div>
+                <div class="historique-container h2018">
+                    <span class="date">09-11 Novembre 2018</span>
+                    <span class="montant">1 094 731€</span>
+                    <span class="asso">Médécins Sans Frontières</span>
+                </div>
+                <div class="historique-container h2019">
+                    <span class="date">20-22 Septembre 2019</span>
+                    <span class="montant">3 509 878€</span>
+                    <span class="asso">Institut Pasteur</span>
+                </div>
+                <div class="historique-container h2020">
+                    <span class="date">16-18 Octobre 2020</span>
+                    <span class="montant">5 724 377€</span>
+                    <span class="asso">Amnesty International</span>
+                </div>
+                <div class="historique-container h2021">
+                    <span class="date">28-31 Octobre 2021</span>
+                    <span class="montant">10 064 480€</span>
+                    <span class="asso">Action Contre la Faim</span>
+                </div>
+                <div class="historique-container h2022">
+                    <span class="date">08-11 Septembre 2022</span>
+                    <span class="montant">10 182 126 €</span>
+                    <span class="asso">Sea Shepherd - LPO - WWF - The SeaCleaners</span>
+                </div>
+            </section>
+            <section class="associations" id="associations">
+                <div class="filtre-asso">
+                    <h3>Les associations</h3>
+                    <div class="association filtre-fdf">
+                        <img src="./assets/img/fdf.png" alt="Fondation de France" class="logo-association">
+                        <h4>Fondation de France</h4>
+                    </div>
+                    <div class="association filtre-seasheperd">
+                        <img src="./assets/img/seasheperd.png" alt="Sea Shepherd" class="logo-association">
+                        <h4>Sea Shepherd</h4>
+                    </div>
+                    <div class="association filtre-lpo">
+                        <img src="./assets/img/lpo.png" alt="Ligue pour la Protection des Oiseaux" class="logo-association">
+                        <h4>LPO</h4>
+                    </div>
+                    <div class="association filtre-wwf">
+                        <img src="./assets/img/wwf.png" alt="WWF" class="logo-association">
+                        <h4>WWF</h4>
+                    </div>
+                    <div class="association filtre-tftp">
+                        <img src="./assets/img/tftp.png" alt="Time For The Planet" class="logo-association">
+                        <h4>Time For The Planet</h4>
+                    </div>
+                    <div class="association filtre-theseacleaners">
+                        <img src="./assets/img/theseacleaners.png" alt="The SeaCleaners" class="logo-association">
+                        <h4>The SeaCleaners</h4>
+                    </div>
+                </div>
+                <div class="asso-container">
+                    <div class="description-asso fdf">
+                        <img src="./assets/img/fdf.png" alt="Fondation de France" class="img-association">
+                        <h5>Fondation de France</h5>
+                        <span class="texte-description-asso">Pour le ZEvent 2022, la Fondation de France assure la collecte des dons et le reversement aux 4 associations bénéficiaires : LPO, Sea Shepherd, The SeaCleaners et WWF.</span>
+                    </div>
+                    <div class="description-asso seasheperd">
+                        <img src="./assets/img/seasheperd.png" alt="Sea Shepherd" class="img-association">
+                        <h5>Sea Shepherd</h5>
+                        <span class="texte-description-asso">La Sea Shepherd Conservation Society (SSCS) est une organisation non gouvernementale internationale maritime à but non lucratif, vouée à la protection des écosystèmes marins et de la biodiversité.</span>
+                    </div>
+                    <div class="description-asso lpo">
+                        <img src="./assets/img/lpo.png" alt="LPO" class="img-association">
+                        <h5>LPO</h5>
+                        <span class="texte-description-asso">La LPO (Ligue pour la Protection des Oiseaux) agit pour la biodiversité par la connaissance et la protection des espèces ; le développement et la préservation des espaces ; la sensibilisation et la mobilisation des citoyens ; l’accompagnement des entreprises et des collectivités.</span>
+                    </div>
+                    <div class="description-asso wwf">
+                        <img src="./assets/img/wwf.png" alt="wwf" class="img-association">
+                        <h5>WWF</h5>
+                        <span class="texte-description-asso">Le WWF (World Wide Fund for Nature) est une organisation non gouvernementale internationale (ONGI) vouée à la protection de l'environnement et au développement durable.</span>
+                    </div>
+                    <div class="description-asso tftp">
+                        <img src="./assets/img/tftp.png" alt="time for the planet" class="img-association">
+                        <h5>Time For The Planet</h5>
+                        <span class="texte-description-asso">Time for The Planet est une holding investissant dans le domaine de la lutte contre le changement climatique en France à l'étranger.</span>
+                    </div>
+                    <div class="description-asso theseacleaners">
+                        <img src="./assets/img/theseacleaners.png" alt="the seacleaners" class="img-association">
+                        <h5>The SeaCleaners</h5>
+                        <span class="texte-description-asso">The SeaCleaners est une association qui agit contre la pollution plastique marine à travers des missions correctives et préventives, en mer et à terre.</span>
+                    </div>
+                </div>
+            </section>
+            <section class="streamers">
+                <h2>Streamers 2022</h2>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/alexclick" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 2.png" alt="Alexclick">
+                        <span class="span-streamer">Alexclick</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/alphacast" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 3.png" alt="Alphacast">
+                        <span class="span-streamer">Alphacast</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/altair" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 4.png" alt="Altair">
+                        <span class="span-streamer">Altair</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/angledroit" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 5.png" alt="Angle Droit">
+                        <span class="span-streamer">Angle Droit</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/antoinedaniel" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 6.png" alt="Antoine Daniel">
+                        <span class="span-streamer">Antoine Daniel</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/avamind" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 7.png" alt="Avamind">
+                        <span class="span-streamer">Avamind</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/bagherajones" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 8.png" alt="Baghera Jones">
+                        <span class="span-streamer">Baghera Jones</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/berlu" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 9.png" alt="Berlu">
+                        <span class="span-streamer">Berlu</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/blitzstream" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 10.png" alt="BlitzStream">
+                        <span class="span-streamer">BlitzStream</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/fantabobshow" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 11.JPEG" alt="Bob Lennon">
+                        <span class="span-streamer">Bob Lennon</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/bren_tm2" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 12.png" alt="Bren">
+                        <span class="span-streamer">Bren</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/camak" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 13.png" alt="CaMaK">
+                        <span class="span-streamer">CaMaK</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/carljrtm" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 14.png" alt="CarlJr">
+                        <span class="span-streamer">CarlJr</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/7ckngMad" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 15.png" alt="Ceb">
+                        <span class="span-streamer">Ceb</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Chap_GG" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 16.png" alt="Chap">
+                        <span class="span-streamer">Chap</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/chowh1" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 17.png" alt="Chowh1">
+                        <span class="span-streamer">Chowh1</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/dach" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 18.png" alt="Dach">
+                        <span class="span-streamer">Dach</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/DamDamLive" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 19.png" alt="DamDamLive">
+                        <span class="span-streamer">DamDamLive</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/doigby" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 20.png" alt="Doigby">
+                        <span class="span-streamer">Doigby</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/domingo" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 21.png" alt="Domingo">
+                        <span class="span-streamer">Domingo</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/DrFeelgood" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 22.png" alt="DrFeelgood">
+                        <span class="span-streamer">DrFeelgood</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/etoiles" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 23.png" alt="Etoiles">
+                        <span class="span-streamer">Etoiles</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/gius" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 24.png" alt="Gius">
+                        <span class="span-streamer">Gius</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/GoBGG" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 25.png" alt="GoBGG">
+                        <span class="span-streamer">GoBGG</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Gom4rt" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 26.png" alt="Gom4rt">
+                        <span class="span-streamer">Gom4rt</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/HortyUnderscore" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 27.png" alt="Horty">
+                        <span class="span-streamer">Horty</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/ImSoFresh" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 28.png" alt="ImSoFresh">
+                        <span class="span-streamer">ImSoFresh</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/jbzzed" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 29.jpeg" alt="Jbzz">
+                        <span class="span-streamer">Jbzz</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/JeanMassiet" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 30.png" alt="Jean Massiet">
+                        <span class="span-streamer">Jean Massiet</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/JeelTV" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 31.png" alt="Jeel">
+                        <span class="span-streamer">Jeel</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Jirayalecochon" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 32.png" alt="Jiraya">
+                        <span class="span-streamer">Jiraya</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/KennyStream" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 33.jpeg" alt="Kenny">
+                        <span class="span-streamer">Kenny</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Lapi" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 34.png" alt="Lapi">
+                        <span class="span-streamer">Lapi</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/LeBouseuh" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 35.png" alt="LeBouseuh">
+                        <span class="span-streamer">LeBouseuh</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Lege" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 36.png" alt="Lege">
+                        <span class="span-streamer">Lege</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/LittleBigWhale" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 37.png" alt="LittleBigWhale">
+                        <span class="span-streamer">LittleBigWhale</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/MasterSnakou" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 38.png" alt="Master Snakou">
+                        <span class="span-streamer">Master Snakou</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/mistermv" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 39.png" alt="Mister MV">
+                        <span class="span-streamer">Mister MV</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/MoMaN" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 40.png" alt="MoMaN">
+                        <span class="span-streamer">MoMaN</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Mynthos" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 41.png" alt="Mynthos">
+                        <span class="span-streamer">Mynthos</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/NBK" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 42.jpeg" alt="NBK">
+                        <span class="span-streamer">NBK</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/PapeSan" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 43.png" alt="PapeSan">
+                        <span class="span-streamer">PapeSan</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Ponce" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 44.png" alt="Ponce">
+                        <span class="span-streamer">Ponce</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Rivenzi" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 45.png" alt="Rivenzi">
+                        <span class="span-streamer">Rivenzi</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Shaunz" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 46.png" alt="Shaunz">
+                        <span class="span-streamer">Shaunz</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/shisheyu_mayamoto" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 47.png" alt="Shisheyu">
+                        <span class="span-streamer">Shisheyu</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/SkyrrozTV" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 48.png" alt="SkyRRoZ">
+                        <span class="span-streamer">SkyRRoZ</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Skyyart" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 49.png" alt="Skyyart">
+                        <span class="span-streamer">Skyyart</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Solary" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 50.png" alt="Solary">
+                        <span class="span-streamer">Solary</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/timefortheplanet" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 51.png" alt="Time for the Planet">
+                        <span class="span-streamer">Time for the Planet</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Tonton" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 52.png" alt="Tonton">
+                        <span class="span-streamer">Tonton</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/tpk_live" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 53.png" alt="TPK">
+                        <span class="span-streamer">TPK</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Trinity" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 54.png" alt="Trinity">
+                        <span class="span-streamer">Trinity</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Ultia" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 55.png" alt="Ultia">
+                        <span class="span-streamer">Ultia</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Un33D" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 56.png" alt="Un33D">
+                        <span class="span-streamer">Un33D</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/Xari" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 57.jpeg" alt="Xari">
+                        <span class="span-streamer">Xari</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/ZeratoR" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 58.png" alt="ZeratoR">
+                        <span class="span-streamer">ZeratoR</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/ZEvent" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 59.png" alt="ZEvent">
+                        <span class="span-streamer">ZEvent</span>
+                    </a>
+                </div>
+                <div>
+                    <a class="streamer" href="https://www.twitch.tv/ZEventPlays" target="_blank">
+                        <img class="img-streamer" src="./assets/img/asset 60.png" alt="ZEventPlays">
+                        <span class="span-streamer">ZEventPlays</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="btnSwiper" id="swiperOpen">
+                <span class="spanSwiper">Afficher les streamers</span>  
+            </div>
+            <div class="btnSwiper" id="swiperClose">
+                <span class="spanSwiper">Masquer les streamers</span>  
+            </div>
+            <section class="swiperjs">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/alexclick" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 2.png" alt="Alexclick">
+                                <span class="span-streamer">Alexclick</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/alphacast" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 3.png" alt="Alphacast">
+                                <span class="span-streamer">Alphacast</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/altair" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 4.png" alt="Altair">
+                                <span class="span-streamer">Altair</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/angledroit" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 5.png" alt="Angle Droit">
+                                <span class="span-streamer">Angle Droit</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/antoinedaniel" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 6.png" alt="Antoine Daniel">
+                                <span class="span-streamer">Antoine Daniel</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/avamind" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 7.png" alt="Avamind">
+                                <span class="span-streamer">Avamind</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/bagherajones" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 8.png" alt="Baghera Jones">
+                                <span class="span-streamer">Baghera Jones</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/berlu" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 9.png" alt="Berlu">
+                                <span class="span-streamer">Berlu</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/blitzstream" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 10.png" alt="BlitzStream">
+                                <span class="span-streamer">BlitzStream</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/fantabobshow" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 11.JPEG" alt="Bob Lennon">
+                                <span class="span-streamer">Bob Lennon</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/bren_tm2" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 12.png" alt="Bren">
+                                <span class="span-streamer">Bren</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/camak" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 13.png" alt="CaMaK">
+                                <span class="span-streamer">CaMaK</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/carljrtm" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 14.png" alt="CarlJr">
+                                <span class="span-streamer">CarlJr</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/7ckngMad" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 15.png" alt="Ceb">
+                                <span class="span-streamer">Ceb</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Chap_GG" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 16.png" alt="Chap">
+                                <span class="span-streamer">Chap</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/chowh1" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 17.png" alt="Chowh1">
+                                <span class="span-streamer">Chowh1</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/dach" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 18.png" alt="Dach">
+                                <span class="span-streamer">Dach</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/DamDamLive" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 19.png" alt="DamDamLive">
+                                <span class="span-streamer">DamDamLive</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/doigby" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 20.png" alt="Doigby">
+                                <span class="span-streamer">Doigby</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/domingo" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 21.png" alt="Domingo">
+                                <span class="span-streamer">Domingo</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/DrFeelgood" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 22.png" alt="DrFeelgood">
+                                <span class="span-streamer">DrFeelgood</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/etoiles" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 23.png" alt="Etoiles">
+                                <span class="span-streamer">Etoiles</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/gius" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 24.png" alt="Gius">
+                                <span class="span-streamer">Gius</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/GoBGG" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 25.png" alt="GoBGG">
+                                <span class="span-streamer">GoBGG</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Gom4rt" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 26.png" alt="Gom4rt">
+                                <span class="span-streamer">Gom4rt</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/HortyUnderscore" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 27.png" alt="Horty">
+                                <span class="span-streamer">Horty</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/ImSoFresh" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 28.png" alt="ImSoFresh">
+                                <span class="span-streamer">ImSoFresh</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/jbzzed" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 29.jpeg" alt="Jbzz">
+                                <span class="span-streamer">Jbzz</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/JeanMassiet" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 30.png" alt="Jean Massiet">
+                                <span class="span-streamer">Jean Massiet</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/JeelTV" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 31.png" alt="Jeel">
+                                <span class="span-streamer">Jeel</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Jirayalecochon" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 32.png" alt="Jiraya">
+                                <span class="span-streamer">Jiraya</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/KennyStream" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 33.jpeg" alt="Kenny">
+                                <span class="span-streamer">Kenny</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Lapi" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 34.png" alt="Lapi">
+                                <span class="span-streamer">Lapi</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/LeBouseuh" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 35.png" alt="LeBouseuh">
+                                <span class="span-streamer">LeBouseuh</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Lege" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 36.png" alt="Lege">
+                                <span class="span-streamer">Lege</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/LittleBigWhale" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 37.png" alt="LittleBigWhale">
+                                <span class="span-streamer">LittleBigWhale</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/MasterSnakou" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 38.png" alt="Master Snakou">
+                                <span class="span-streamer">Master Snakou</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/mistermv" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 39.png" alt="Mister MV">
+                                <span class="span-streamer">Mister MV</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/MoMaN" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 40.png" alt="MoMaN">
+                                <span class="span-streamer">MoMaN</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Mynthos" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 41.png" alt="Mynthos">
+                                <span class="span-streamer">Mynthos</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/NBK" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 42.jpeg" alt="NBK">
+                                <span class="span-streamer">NBK</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/PapeSan" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 43.png" alt="PapeSan">
+                                <span class="span-streamer">PapeSan</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Ponce" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 44.png" alt="Ponce">
+                                <span class="span-streamer">Ponce</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Rivenzi" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 45.png" alt="Rivenzi">
+                                <span class="span-streamer">Rivenzi</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Shaunz" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 46.png" alt="Shaunz">
+                                <span class="span-streamer">Shaunz</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/shisheyu_mayamoto" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 47.png" alt="Shisheyu">
+                                <span class="span-streamer">Shisheyu</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/SkyrrozTV" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 48.png" alt="SkyRRoZ">
+                                <span class="span-streamer">SkyRRoZ</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Skyyart" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 49.png" alt="Skyyart">
+                                <span class="span-streamer">Skyyart</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Solary" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 50.png" alt="Solary">
+                                <span class="span-streamer">Solary</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/timefortheplanet" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 51.png" alt="Time for the Planet">
+                                <span class="span-streamer">Time for the Planet</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Tonton" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 52.png" alt="Tonton">
+                                <span class="span-streamer">Tonton</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/tpk_live" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 53.png" alt="TPK">
+                                <span class="span-streamer">TPK</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Trinity" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 54.png" alt="Trinity">
+                                <span class="span-streamer">Trinity</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Ultia" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 55.png" alt="Ultia">
+                                <span class="span-streamer">Ultia</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Un33D" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 56.png" alt="Un33D">
+                                <span class="span-streamer">Un33D</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/Xari" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 57.jpeg" alt="Xari">
+                                <span class="span-streamer">Xari</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/ZeratoR" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 58.png" alt="ZeratoR">
+                                <span class="span-streamer">ZeratoR</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/ZEvent" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 59.png" alt="ZEvent">
+                                <span class="span-streamer">ZEvent</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="streamer" href="https://www.twitch.tv/ZEventPlays" target="_blank">
+                                <img class="img-streamer" src="./assets/img/asset 60.png" alt="ZEventPlays">
+                                <span class="span-streamer">ZEventPlays</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </section>
+        </footer>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="./assets/js/p5.min.js"></script>
+        <script src="./assets/js/vanta.topology.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+/*=============== FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --color1: #000000;
+  --color2: #6CB48F;
+  --color3: #FCA034;
+  --color4: #FFFFFF;
+  --color5: #FBD243;
+  --color6 :#707581;
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: var(--color2);
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Poppins";
+  color: var(--color1);
+  background-color: var(--color4);
+}
+
+/*=============== HEADER ===============*/
+header {
+  height: 100px;
+  width: 100vw;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color1);
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--color5);
+  transition: .5s;
+}
+
+.ri-menu-3-line {
+  font-size: 26px;
+}
+
+.menu-active {
+  color: var(--color2);
+}
+
+/*=============== MAIN ===============*/
+main {
+  padding-left: 80px;
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100vw;
+  height: 70vh;
+}
+
+.gauche {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+}
+
+
+h1 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color2);
+}
+
+h2 {
+  font-family: "Bebas Neue";
+  font-size: 7rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color6);
+}
+
+button {
+  background-color: var(--color2);
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: none;
+  height: 50px;
+}
+
+button:hover {
+  background-color: var(--color3);
+  transition: .5s;
+}
+
+
+#btn-topic {
+  width: 200px;
+  border-radius: 30px;
+  box-shadow: 20px 20px 60px 0px #C3DDD0;
+}
+
+.droite {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#fond {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 80%;
+  height: 110%;
+}
+
+#photo {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 80%;
+  height: 110%;
+}
+
+.infosbulles {
+  height: 40px;
+  width: 125px;
+  border-radius: 30px;
+  background-color: var(--color4);
+  font-weight: 500;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+}
+
+.condensation {
+  top: 5%;
+  left: 35%;
+}
+.evaporation {
+  top: 70%;
+  left: 50%;
+}
+.precipitation {
+  top: 50%;
+  left: 10%;
+}
+
+
+/*=============== FOOTER ===============*/
+footer {
+  height: 50px;
+  width: 100vw;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: absolute;
+  bottom: 25px;
+}
+
+.footer-gauche {
+  width: 30%;
+  height: 100%;
+}
+
+.free {
+  background-color: var(--color3);
+  height: 20px;
+  width: 40px;
+  color: var(--color4);
+
+}
+
+.chat {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 80px;
+}
+
+/*=============== RESPONSIVE ===============*/
+@media (min-width: 1px) and (max-width: 1023px) {
+  h2 {
+    font-size: 5rem;
+  }
+  #fond {
+    width: 100%;
+  }
+  #photo {
+    width: 100%;
+  }
+  ul {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  h2 {
+    font-size: 5rem;
+  }
+  #fond {
+    width: 80%;
+  }
+  #photo {
+    width: 80%;
+  }
+  ul {
+    width: 95%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 170vh;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  header {
+    height: 100px;
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+  a {
+    display: none;
+  }
+  footer {
+    bottom: none;
+    top: 180vh;
+  }
+  .droite {
+    margin-top: 75px;
+  }
+}
+
